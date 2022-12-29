@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лабораторная работа №6</title>
+</head>
+<body>
+<p >цвет фона</p>
+<input id="i1" type="" name="">
+<button onclick="fon()">ввести</button>
+<p id="tc">цвет текста</p>
+<input id="i2" type="" name="">
+<button onclick="text()">ввести</button>
+<p><a id="link" href="#">ссылка</a></p>
+<input id="i3" type="" name="">
+<button onclick="link()">ввести</button>
+<script type="text/javascript">
+function fon(){
+var i1 = document.getElementById("i1").value
+document.body.style.background = i1;
+}
+function text(){
+var i2 = document.getElementById("i2").value
+
+var textcolor = document.getElementById("tc")
+textcolor.style.color = i2;
+}
+function link(){
+var i3 = document.getElementById("i3").value
+var link = document.getElementById("link")
+link.href = i3;
+}
+
+</script>
+</body>
+</html>
